@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:2222@localhost:5432/mentalhealthcenter"
+}
+
+model BranchesRU {
+  id_branches Int          @id @default(autoincrement())
+  name        String
+  address     String
+  Chief       String
+  url         String
+  id_phone    Int
+  contant     PhoneBranche @relation(fields: [id_phone], references: [id_phone])
+}
+
+model BranchesUZ {
+  id_branches Int          @id @default(autoincrement())
+  name        String
+  address     String
+  Chief       String
+  url         String
+  id_phone    Int
+  contant     PhoneBranche @relation(fields: [id_phone], references: [id_phone])
+}
+
+model BranchesEN {
+  id_branches Int          @id @default(autoincrement())
+  name        String
+  address     String
+  Chief       String
+  url         String
+  id_phone    Int
+  contant     PhoneBranche @relation(fields: [id_phone], references: [id_phone])
+}
+
+model PhoneBranche {
+  id_phone   Int          @id @default(autoincrement())
+  phone      String
+  BranchesEN BranchesEN[]
+  BranchesRU BranchesRU[]
+  BranchesUZ BranchesUZ[]
+}
+
+model Free_seats {
+  id_seat  Int @id @default(autoincrement())
+  free     Int
+  all_seat Int
+}
+
+model Patients {
+  id_patients Int    @id @default(autoincrement())
+  url         String @unique
+  title       String
+  key_words   String
+  lang        String
+}
+
+model Departments {
+  id_departments Int         @id @default(autoincrement())
+  title_ru       String      @unique(map: "Departments_title_key")
+  title_uz       String      @unique(map: "Departments_title_key_uz")
+  title_en       String      @unique(map: "Departments_title_key_en")
+  Divisions      Divisions[]
+}
+
+model Divisions {
+  id_divisions   Int         @id @default(autoincrement())
+  title_ru       String
+  id_departments Int
+  title_uz       String
+  title_en       String
+  departments    Departments @relation(fields: [id_departments], references: [id_departments])
+}
