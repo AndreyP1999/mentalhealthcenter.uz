@@ -24,20 +24,21 @@ export async function middleware(request: NextRequest) {
 
     const response = NextResponse.next();
     const pathName = request.nextUrl.pathname
+    const safePath = new RegExp("^/$|^/files/|^/favicon.ico$|^/api|^/logo.png$|^/robots.txt$|^/auth$")
+    console.log(safePath.test(pathName), pathName)
 
-
-    if (pathName == "/" || pathName == "/auth/" || pathName == "/logo.png") {
+    if (safePath.test(pathName)) {
         return response
     }
     else {
         const listPath = pathName.split("/")
-        if (listPath[1] == "favicon.ico" || languages.includes(listPath[1])) {
+        if (languages.includes(listPath[1])) {
             return response
         }
-     
+
         if (listPath[1].toLowerCase() == "adminpanel") {
             try {
-              
+
                 if (token) {
                     const { sub } = await verifyJWT<{ sub: string }>(token);
                     response.headers.set("X-USER-ID", sub);
@@ -53,12 +54,6 @@ export async function middleware(request: NextRequest) {
                     new URL(`/auth`, request.url)
                 );
             }
-        }
-        else {
-            return NextResponse.redirect(
-                new URL(`/`, request.url)
-            );
-
         }
 
 

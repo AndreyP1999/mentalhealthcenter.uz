@@ -7,22 +7,17 @@ import { generateHTML } from "@/helpers/generateHTML";
 import mime from 'mime';
 import { PrismaClient } from "@prisma/client";
 
-// To handle a GET request to /api
 
-import type { NextApiRequest, NextApiResponse } from 'next'
-
+const allowedMimeTypes = [
+  'application/msword', // для Word файлов
+  'application/pdf', // для PDF файлов
+  'application/vnd.ms-powerpoint', // для презентаций
+];
 
 
 
 // To handle a POST request to /api
 export async function POST(request: Request) {
-
-
-  const allowedMimeTypes = [
-    'application/msword', // для Word файлов
-    'application/pdf', // для PDF файлов
-    'application/vnd.ms-powerpoint', // для презентаций
-  ];
 
   const data = await request.formData()
 
@@ -32,12 +27,17 @@ export async function POST(request: Request) {
   const language = String(data.get("language"));
   const file = (data.get("thisFile")) as File;
 
+
   if (name.length != 0 && isAllowedFileType(file.name)) {
-    const path = resolve('public', `${Date.now()}_${transcriptionEnRu(file.name)}`)
+    const newName = `${Date.now()}_${transcriptionEnRu(file.name)}`
+    const path = resolve('public', 'files', newName)
     const buffer = Buffer.from(await file.arrayBuffer());
-    const url = `/${Date.now()}_${transcriptionEnRu(file.name)}`
+    const url = `/${newName}`
+  
+
+    
     try {
-      const res = await writeFile(path, buffer);
+      const res = await writeFile(path, buffer, { encoding: "utf8", flag: "w+" });
       const prisma = new PrismaClient()
       const info = await prisma.patients.create({
         data: {
@@ -49,7 +49,7 @@ export async function POST(request: Request) {
       })
       return Response.json({ Message: "Success", status: 201 });
     } catch (error) {
-      // console.log(error);
+
 
       return Response.json({ Message: error, status: 500 });
     }
@@ -61,11 +61,7 @@ export async function POST(request: Request) {
 
 
 function isAllowedFileType(filePath: string) {
-  const allowedMimeTypes = [
-    'application/msword', // для Word файлов
-    'application/pdf', // для PDF файлов
-    'application/vnd.ms-powerpoint', // для презентаций
-  ];
+
 
   const fileMimeType = mime.getType(filePath);
   if (!fileMimeType) {

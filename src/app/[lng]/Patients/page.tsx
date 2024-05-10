@@ -1,3 +1,4 @@
+'use client'
 import Header from "@/components/header/page";
 import Image from "next/image";
 
@@ -5,18 +6,30 @@ import Footer from "@/components/footer/page";
 import { localizationMain } from "@/local/main";
 import { localizationPatients } from "@/local/patients";
 import { PrismaPatients } from "@/helpers/prisma/prismaPatients";
-import { Fillter } from "./form";
+import { Filter } from "./Filter";
+import { useEffect, useState } from "react";
+import type { Patients } from "@prisma/client";
 
 
-export default async function Patients({ params, query }: {
+export default function Patients({ params, query }: {
     params: { lng: "ru" | "uz" | "en" }, query: any
 }) {
 
+    const [files, setFiles] = useState<Patients[]>([])
+    const [lang, setLang] = useState("all")
+    const [text, setText] = useState("")
+    useEffect(() => {
+        fetch("/api/getFiles", {
+            method: "POST",
+            body: JSON.stringify({ lang, text })
+        })
+            .then(res => res.json())
+            .then(data => {
+                // console.log(data);
+                setFiles(data.files)
+            })
+    }, [lang, text])
 
-
-
-    const prisma = new PrismaPatients()
-    const files = await prisma.getAllPatients("uz")
     return (
         <>
             <Header lng={params.lng} localizate={localizationMain[params.lng].header} />
@@ -35,7 +48,11 @@ export default async function Patients({ params, query }: {
 
                 <div className="  flex justify-center items-center">
                     <div className="container mx-auto rounded-lg p-14">
-                        <Fillter
+                        <Filter
+                            setLang={setLang}
+                            setText={setText}
+                            lang={lang}
+                            text={text}
                             title={localizationPatients[params.lng].title}
                             file_name={localizationPatients[params.lng].file_name}
                             find={localizationPatients[params.lng].find}
@@ -97,7 +114,7 @@ export default async function Patients({ params, query }: {
                                 </div>
                                 <div className="justify-between items-center flex gap-2.5 mt-2 py-2 w-96 ">
                                     <div className=""> {el.lang}</div>
-                                    <a href={el.url}>
+                                    <a href={'/files/' + el.url} download>
                                         <button className="bg-blue-500 text-white text-base rounded-lg px-4 py-2 font-thin"> {localizationPatients[params.lng].download}</button>
                                     </a>
 
@@ -105,7 +122,7 @@ export default async function Patients({ params, query }: {
                             </div>
                         </div>
                     )
-                })})
+                })}
             </div>
             <Footer localizate={localizationMain[params.lng].footer} />
         </>

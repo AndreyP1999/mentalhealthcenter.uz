@@ -14,12 +14,15 @@ export async function sendFile(form: HTMLFormElement) {
 
         method: "post",
     })
-    if (res.status > 299) {
-        //  error
 
+   
+
+
+    const body = await res.json();
+    if (body.status > 299) {
+        console.log("error", body)
     }
     else {
-        console.log(res.json());
-
+        alert("success")
     }
 }

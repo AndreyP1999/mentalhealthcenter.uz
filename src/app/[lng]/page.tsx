@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params?: { lng: "uz" | "en"
 export default function Home({ params }: { params?: { lng: "uz" | "en" } }) {
   const lang = params?.lng ? params.lng : mainLanguages
   const text = localizationMain[lang]
-  console.log("params",params);
+  // console.log("params",params);
 
   return (
     <div>
