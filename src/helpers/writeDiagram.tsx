@@ -1,33 +1,38 @@
 import { DiagramsComponents } from "@/interface/local/main/diagramsComponents"
 import Link from "next/link"
+import { Handle, Position } from "reactflow"
 
 interface Nodes {
     id: string,
     type?: string,
+    targetPosition: Position,
+    sourcePosition: Position,
+    othreSourcePosition?: Position[],
     data: {
         label: JSX.Element
     },
     position: { x: number, y: number }
 };
-export const createNodes = (localizate: DiagramsComponents): Nodes[] => {
+export const createNodes = (Nodes: any[]): Nodes[] => {
     const res: Nodes[] = []
 
 
-    for (let i = 0; i < localizate?.content?.Nodes?.length; i++) {
+    for (let i = 0; i < Nodes.length; i++) {
         res.push(
             {
-                id: localizate.content.Nodes[i].id,
-               
+                id: Nodes[i].id,
+                targetPosition: Nodes[i].options.targetPosition,
+                sourcePosition: Position.Left,
                 // you can also pass a React component as a label 
                 data: {
                     label: (
-                        <Link className="box-1" href="#" >
-                            <p className="uppercase font-bold">{localizate.content.Nodes[i].title}</p>
-                            <p className="font-normal italic">{localizate.content.Nodes[i].subtitle}</p>
+                        <Link className="box-1" style={Nodes[i].style} href="#" >
+                            <p className="uppercase font-bold">{Nodes[i].title}</p>
+                            <pre className="font-normal italic text-left">{Nodes[i].subtitle}</pre>
                         </Link>
                     )
                 },
-                position: localizate.content.Nodes[i].position
+                position: Nodes[i].position
             }
         )
 

@@ -1,0 +1,594 @@
+{
+    "Nodes": [
+        {
+            "id": "1",
+            "title": "директор",
+            "subtitle": "Холов Жахон Истамович",
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "2",
+            "title": "Научные советы",
+            "subtitle": "",
+            "position": {
+                "x": -500,
+                "y": 0
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "3",
+            "title": "Центральный совет",
+            "subtitle": "",
+            "position": {
+                "x": 500,
+                "y": 0
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "4",
+            "title": "Заместитель директора по научной работе ",
+            "subtitle": "",
+            "position": {
+                "x": -600,
+                "y": 100
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "5",
+            "title": "Заместитель директора по психиатрии ",
+            "subtitle": "",
+            "position": {
+                "x": -300,
+                "y": 100
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "6",
+            "title": "советник директора",
+            "subtitle": "",
+            "position": {
+                "x": 0,
+                "y": 100
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "7",
+            "title": "Заместитель директора по лечебной работе главный врач наркологической клиники центра",
+            "subtitle": "",
+            "position": {
+                "x": 200,
+                "y": 210
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "8",
+            "title": "Заместитель директора по работе с филиалами",
+            "subtitle": "",
+            "position": {
+                "x": 300,
+                "y": 100
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "9",
+            "title": "Заместитель директора по общим вопросам",
+            "subtitle": "",
+            "position": {
+                "x": 600,
+                "y": 100
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "10",
+            "title": "Научные отделы",
+            "subtitle": "1. Эпидемиология, классификация, диагностика, клиника, лечение, профилактика и медицинская социальная реабилитация психических заболеваний\n2. Отдел инновационных исследований\n3. Эпидемиология, классификация, диагностика, клиника, лечение, профилактика и медицинская социальная реабилитация наркологических заболеваний\n4. Отдел медицинских и биологических проблем\n5. Отдел генетических исследований",
+            "position": {
+                "x": -600,
+                "y": 180
+            },
+            "style": {
+                "width": 300,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "11",
+            "title": "Учебный отдел",
+            "subtitle": "1. Методический отдел\n2. Отдел последипломного образования\n3. Отдел дополнительного образования",
+            "position": {
+                "x": -600,
+                "y": 440
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "12",
+            "title": "Психофизиологическая и психодиагностическая лаборатория",
+            "subtitle": "",
+            "position": {
+                "x": -600,
+                "y": 580
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "13",
+            "title": "Каракалпакстан Республика, филиалы по психиатрии города Ташкента и областей",
+            "subtitle": "",
+            "position": {
+                "x": -250,
+                "y": 180
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "14",
+            "title": "Консультативные поликлинические отделения",
+            "subtitle": "1. Регистратура\n2. Наркологический кабинет\n3. Кабинет медицинского психолога\n4. Кабинет психотерапевта\n5. Кабинет терапевта\n6. Кабинет невропатолога\n7. Другие специализированные кабинеты (по мере необходимости)",
+            "position": {
+                "x": -250,
+                "y": 300
+            },
+            "style": {
+                "width": 350,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "15",
+            "title": "Клиническо-аналитические отделы",
+            "subtitle": "1. Диагностические отделы (УЗИ, ЭКГ, ЭЭГ, рентген и др.)\n2. Лабораторные отделы'",
+            "position": {
+                "x": -250,
+                "y": 510
+            },
+            "style": {
+                "width": 240,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "16",
+            "title": "Отдел физиотерапии",
+            "subtitle": "",
+            "position": {
+                "x": -250,
+                "y": 650
+            },
+            "style": {
+                "width": 190,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "17",
+            "title": "Отделения добровольного стационарного лечения",
+            "subtitle": "1. Приемное отделение\n2. Отделение реанимации\n3. Отделение лечения алкоголизма\n4. Отделение лечения наркомании и токсикомании\n5. Отделение медицинской социальной реабилитации",
+            "position": {
+                "x": 200,
+                "y": 370
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "18",
+            "title": "",
+            "subtitle": "1. Аптека\n2. Архив\n3. Централизованное стерилизационное отделение\n4. Виварий",
+            "position": {
+                "x": 200,
+                "y": 600
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "19",
+            "title": "Республика Каракапакстан, Ташкент по городской и областной наркологии региональные отделения",
+            "subtitle": "",
+            "position": {
+                "x": 200,
+                "y": 730
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "20",
+            "title": "Ичкирий стационар даволаш бўлимлари",
+            "subtitle": "1. Қабулхона\n2. Реанимация бўлими\n3. Алкоголизмни даволаш бўлими\n4. Наркемания ва токсикоманияни даволаш бўлими\n5. Тиббий-ижтимоий реабилитация бўлими",
+            "position": {
+                "x": 500,
+                "y": 250
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "21",
+            "title": "Ёрдамчи бўлимлар",
+            "subtitle": "1. Дорихона\n2. Архив\n3. Марказлашган стерилизация бўлими\n4. Виварий'",
+            "position": {
+                "x": 500,
+                "y": 470
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "22",
+            "title": "Қорақалпоғистон Республикаси, Тошкент шаҳар ва вилоят наркология бўйича ҳудудий филиаллар",
+            "subtitle": "",
+            "position": {
+                "x": 500,
+                "y": 650
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "23",
+            "title": "Маъмурий-хўжалик хизмати",
+            "subtitle": "1. Техник хизмат\n2. Омборхона\n3. Ошхона хизмати\n4. Озиқ-овқат бўлими",
+            "position": {
+                "x": 800,
+                "y": 250
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "24",
+            "title": "Иқтисодий-молиявий бўлим",
+            "subtitle": "",
+            "position": {
+                "x": 800,
+                "y": 400
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "25",
+            "title": "Пуллик хизматлар бўлими",
+            "subtitle": "",
+            "position": {
+                "x": 800,
+                "y": 480
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "26",
+            "title": "Халқаро алоқалар ва жамоатчилик билан алоқалар бўлими",
+            "subtitle": "",
+            "position": {
+                "x": 800,
+                "y": 550
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "27",
+            "title": "АКТ ва телемедицина бўлими",
+            "subtitle": "",
+            "position": {
+                "x": 800,
+                "y": 660
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "28",
+            "title": "Юридик бўлим",
+            "subtitle": "",
+            "position": {
+                "x": 800,
+                "y": 730
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "29",
+            "title": "Кадрлар бўйича инспектор",
+            "subtitle": "",
+            "position": {
+                "x": 800,
+                "y": 810
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        },
+        {
+            "id": "30",
+            "title": "Ташкилий-услубий ва таҳлил бўлими",
+            "subtitle": "",
+            "position": {
+                "x": 800,
+                "y": 880
+            },
+            "style": {
+                "width": 210,
+                "display": "block"
+            },
+            "options": {
+                "targetPosition": "left",
+                "othreSourcePosition": "bottom",
+                "sourcePosition": "right"
+            }
+        }
+    ],
+    "Edges": [
+        {
+            "id": "e3-4",
+            "type": "step",
+            "source": "1",
+            "target": "4"
+        },
+        {
+            "id": "e3-5",
+            "type": "step",
+            "source": "1",
+            "target": "5"
+        },
+        {
+            "id": "e3-6",
+            "type": "step",
+            "source": "1",
+            "target": "6"
+        },
+        {
+            "id": "e3-7",
+            "type": "step",
+            "source": "1",
+            "target": "7"
+        },
+        {
+            "id": "e3-8",
+            "type": "step",
+            "source": "1",
+            "target": "8"
+        },
+        {
+            "id": "e3-9",
+            "type": "step",
+            "source": "1",
+            "target": "9"
+        },
+        {
+            "id": "e3-10",
+            "type": "step",
+            "source": "1",
+            "target": "9"
+        },
+        {
+            "id": "e3-11",
+            "type": "step",
+            "source": "1",
+            "target": "11"
+        }
+    ]
+}

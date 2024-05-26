@@ -11,7 +11,6 @@ function LangMenu({ thisLang, lang }: { thisLang: string, lang: string }) {
         const regV = /\/(ru|uz|en)\//g
         setPath(  string.replace(regV, "/"))
     }, [])
-console.log(path);
 
 
     return (

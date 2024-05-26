@@ -1,44 +1,31 @@
 'use client'
 
-import { sendFile } from "@/helpers/patients/sendFile";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 function MainPage() {
-    const [text, setText] = useState("Перетащите файл сюда")
+    const [text, setText] = useState("нажмите для загрузки файла")
+    const sendFile = async (form: HTMLFormElement) => {
+        const body = new FormData();
+        const host = window.location.origin
+        body.set("FileName", form.text.value)
+        body.set("thisFile", form.file.files[0]);
+        body.set("description", form.description.value);
+        body.set("language", form.language.value);
 
+        const res = await fetch(`${host}/adminPanel/api/Patients/`, { body, method: "post" })
+        const data = await res.json();
 
-    function preventDefaults(event: any) {
-        event.preventDefault();
-        event.stopPropagation();
+        if (data.status > 299) console.log("error", data)
+        else alert("success")
+
     }
-
-
-    function highlight(dropzone: HTMLElement) {
-        dropzone.classList.add('dragover');
-    }
-
-    function unhighlight(dropzone: HTMLElement) {
-        dropzone.classList.remove('dragover');
-    }
-
-    function handleDrop(e: any) {
-        const dt = e.dataTransfer;
-        const files = dt.files;
-        const fileInput = document.getElementById('file') as HTMLInputElement;
-        fileInput.files = files;
-        setText(files[0].name)
-    }
-
-    const filechange = function (selectedFile: File) {
-        if (selectedFile) {
-            setText(selectedFile.name);
-
-        } else {
-            setText('Файл не выбран')
-
-        }
+    const preventDefaults = (e: any) => { e.preventDefault(); e.stopPropagation(); }
+    const filechange = (selectedFile: File) => {
+        if (selectedFile) setText(selectedFile.name);
+        else setText('Файл не выбран')
     };
-    return (<>
+
+    return (
 
         <section className="bg-gray-100 -z-20 absolute w-full  py-10  top-0 h-screen">
             <div className="max-w-md mx-auto bg-white p-8 rounded-md shadow-md">
@@ -75,10 +62,6 @@ function MainPage() {
                         <label htmlFor="file" className="block text-sm font-medium text-gray-700" >
                             <span>Файл</span>
                             <div
-                                onDragEnter={(e) => { preventDefaults(e); highlight(e.currentTarget) }}
-                                onDragOver={(e) => { preventDefaults(e); highlight(e.currentTarget) }}
-                                onDragLeave={(e) => { preventDefaults(e); unhighlight(e.currentTarget); }}
-                                onDrop={(e) => { preventDefaults(e); unhighlight(e.currentTarget); handleDrop(e) }}
                                 className="relative border-dashed border-2 border-gray-300 rounded-md p-6 flex justify-center items-center dropzone"
                             >
                                 <span id="dropzone__text" className="text-gray-400">{text}</span>
@@ -97,12 +80,11 @@ function MainPage() {
                     </div>
 
                     <button type="submit"
-
                         className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Отправить</button>
                 </form>
             </div >
         </section >
-    </>);
+    );
 }
 
 export default MainPage;

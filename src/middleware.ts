@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 import { languages } from './local/listLang';
 import { verifyJWT } from './helpers/jwt/jwtVerify';
-import { getErrorResponse } from './helpers/api/getErrorResponse';
 
 
 interface AuthenticatedRequest extends NextRequest {
@@ -25,7 +24,6 @@ export async function middleware(request: NextRequest) {
     const response = NextResponse.next();
     const pathName = request.nextUrl.pathname
     const safePath = new RegExp("^/$|^/files/|^/favicon.ico$|^/api|^/logo.png$|^/robots.txt$|^/auth$")
-    console.log(safePath.test(pathName), pathName)
 
     if (safePath.test(pathName)) {
         return response

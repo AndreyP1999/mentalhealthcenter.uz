@@ -1,4 +1,6 @@
 import { MainPage } from "@/interface/local/mainPage";
+import { Position } from "reactflow";
+import { text } from "stream/consumers";
 
 
 
@@ -26,47 +28,7 @@ export const localizationMainPageRU: MainPage = {
 
     diagrams: {
         title: "FLOWCHART",
-        content: {
-            Nodes: [
-                {
-                    id: "1",
-                    title: "директор",
-                    subtitle: "Холов Жахон Истамович",
-                    position: { x: 0, y: 0 }
-
-                },
-                {
-                    id: "2",
-                    title: "Зам. Директора",
-                    subtitle: "Холов Жахон Истамович",
-                    position: { x: 300, y: 320 }
-                },
-                {
-                    id: "3",
-                    title: "Зам. Директора",
-                    subtitle: "Холов Жахон Истамович",
-                    position: { x: -300, y: 320 }
-                },
-                {
-                    id: "4",
-                    title: "Отделения -1",
-                    subtitle: "Lorem ipsum dolor sit amet consectetur.",
-                    position: { x: -150, y: 640 }
-                },
-                {
-                    id: "5",
-                    title: "Отделения -2",
-                    subtitle: "Lorem ipsum dolor sit amet consectetur.",
-                    position: { x: -450, y: 640 }
-                },
-            ],
-            Edges: [
-                { id: "e1-2", type: "step", source: "1", target: "2" },
-                { id: "e1-3", type: "step", source: "1", target: "3" },
-                { id: "e3-4", type: "step", source: "3", target: "4" },
-                { id: "e3-5", type: "step", source: "3", target: "5" },
-            ]
-        }
+     
     }
     ,
     listDepartment: {

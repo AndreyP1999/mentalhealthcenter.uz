@@ -13,7 +13,7 @@ import ReactFlow, {
     BackgroundVariant
 } from "reactflow";
 import 'reactflow/dist/style.css';
-import style from "./style.module.css";
+
 
 function Diagrams({localizate}: { localizate: DiagramsComponents }) {
  
