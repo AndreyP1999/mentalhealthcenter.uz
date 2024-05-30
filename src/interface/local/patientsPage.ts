@@ -1,4 +1,7 @@
+import { head } from "@/interface/head";
+
 export interface localizationPatientsPage {
+    head: head,
     bannerText: string;
     title: string;
     file_name: string;

@@ -1,0 +1,513 @@
+[
+    {
+        "id": "1",
+        "title": "Director",
+        "subtitle": "",
+        "position": {
+            "x": 0,
+            "y": 0
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "bottom",
+            "sourcePosition": "left",
+            "othreSourcePosition": "right"
+        }
+    },
+    {
+        "id": "2",
+        "title": "Scientific Councils",
+        "subtitle": "",
+        "position": {
+            "x": -500,
+            "y": 0
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "3",
+        "title": "Central Council",
+        "subtitle": "",
+        "position": {
+            "x": 500,
+            "y": 0
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "4",
+        "title": "Deputy Director for Research",
+        "subtitle": "",
+        "position": {
+            "x": -600,
+            "y": 100
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "5",
+        "title": "Deputy Director for Psychiatry",
+        "subtitle": "",
+        "position": {
+            "x": -300,
+            "y": 100
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "bottom",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "6",
+        "title": "Director's Advisor",
+        "subtitle": "",
+        "position": {
+            "x": 0,
+            "y": 150
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "7",
+        "title": "Deputy Director for Medical Work, Chief Physician of the Center's Drug Addiction Clinic",
+        "subtitle": "",
+        "position": {
+            "x": 220,
+            "y": 220
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "8",
+        "title": "Deputy Director for Branch Work",
+        "subtitle": "",
+        "position": {
+            "x": 300,
+            "y": 100
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "9",
+        "title": "Deputy Director for General Affairs",
+        "subtitle": "",
+        "position": {
+            "x": 600,
+            "y": 100
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "10",
+        "title": "Research Departments",
+        "subtitle": "1. Epidemiology, classification, diagnosis, clinical features, treatment, prevention and medical and social rehabilitation of mental illnesses\n2. Department of Innovative Research\n3. Epidemiology, classification, diagnosis, clinical features, treatment, prevention and medical and social rehabilitation of drug addiction\n4. Department of Medical and Biological Problems\n5. Department of Genetic Research",
+        "position": {
+            "x": -600,
+            "y": 180
+        },
+        "style": {
+            "width": 300,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "11",
+        "title": "Educational Department",
+        "subtitle": "1. Methodological Department\n2. Department of Postgraduate Education\n3. Department of Continuing Education",
+        "position": {
+            "x": -600,
+            "y": 440
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "12",
+        "title": "Psychophysiological and Psychodiagnostic Laboratory",
+        "subtitle": "",
+        "position": {
+            "x": -600,
+            "y": 580
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "13",
+        "title": "Republic of Karakalpakstan, Branches of Psychiatry in Tashkent City and Regions",
+        "subtitle": "",
+        "position": {
+            "x": -250,
+            "y": 200
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "14",
+        "title": "Consultative Polyclinic Departments",
+        "subtitle": "1. Registration Office\n2. Drug Addiction Cabinet\n3. Medical Psychologist Cabinet\n4. Psychotherapist Cabinet\n5. Therapist Cabinet\n6. Neurologist Cabinet\n7. Other specialized offices (as needed)",
+        "position": {
+            "x": -250,
+            "y": 350
+        },
+        "style": {
+            "width": 350,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "15",
+        "title": "Clinical and Analytical Departments",
+        "subtitle": "1. Diagnostic Departments (Ultrasound, ECG, EEG, X-ray, etc.)\n2. Laboratory Departments",
+        "position": {
+            "x": -140,
+            "y": 560
+        },
+        "style": {
+            "width": 240,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "16",
+        "title": "Department of Physiotherapy",
+        "subtitle": "",
+        "position": {
+            "x": -90,
+            "y": 700
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "17",
+        "title": "Departments of Voluntary Inpatient Treatment",
+        "subtitle": "1. Admission Department\n2. Intensive Care Unit\n3. Department of Alcoholism Treatment\n4. Department of Drug and Toxicomania Treatment\n5. Department of Medical and Social Rehabilitation",
+        "position": {
+            "x": 193,
+            "y": 370
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "18",
+        "title": "",
+        "subtitle": "1. Pharmacy\n2. Archive\n3. Centralized Sterilization Department\n4. Vivarium",
+        "position": {
+            "x": 193,
+            "y": 600
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "bottom",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "19",
+        "title": "Republic of Karakalpakstan, Tashkent City and Regional Departments for City and Regional Drug Addiction",
+        "subtitle": "",
+        "position": {
+            "x": 200,
+            "y": 730
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "20",
+        "title": "Inpatient Treatment Departments",
+        "subtitle": "1. Admission Department\n2. Intensive Care Unit\n3. Department of Alcoholism Treatment\n4. Department of Drug and Toxicomania Treatment\n5. Department of Medical and Social Rehabilitation",
+        "position": {
+            "x": 500,
+            "y": 250
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "21",
+        "title": "Auxiliary Departments",
+        "subtitle": "1. Pharmacy\n2. Archive\n3. Centralized Sterilization Department\n4. Vivarium",
+        "position": {
+            "x": 500,
+            "y": 470
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "22",
+        "title": "Republic of Karakalpakstan, Tashkent City and Regional Branches for Drug Addiction",
+        "subtitle": "",
+        "position": {
+            "x": 500,
+            "y": 650
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "23",
+        "title": "Administrative and Economic Service",
+        "subtitle": "1. Technical Service\n2. Warehouse\n3. Kitchen Service\n4. Food Department",
+        "position": {
+            "x": 800,
+            "y": 250
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "24",
+        "title": "Economic and Financial Department",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 400
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "25",
+        "title": "Department of Paid Services",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 480
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "26",
+        "title": "Department of International Relations and Public Relations",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 550
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "27",
+        "title": "Department of ICT and Telemedicine",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 660
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "28",
+        "title": "Legal Department",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 730
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "29",
+        "title": "Personnel Inspector",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 810
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "30",
+        "title": "Department of Organizational-Methodological and Analytical Work",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 880
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    }
+]

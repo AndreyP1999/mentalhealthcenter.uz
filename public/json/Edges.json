@@ -1,0 +1,104 @@
+[
+    {
+        "id": "e1-2",
+        "type": "step",
+        "source": "1",
+        "target": "2"
+    },
+    {
+        "id": "e1-3",
+        "type": "step",
+        "source": "1",
+        "target": "3"
+    },
+    {
+        "id": "e1-4",
+        "type": "step",
+        "source": "4",
+        "target": "1"
+    },
+    {
+        "id": "e1-5",
+        "type": "step",
+        "source": "5",
+        "target": "1"
+    },
+    {
+        "id": "e1-6",
+        "type": "step",
+        "source": "6",
+        "target": "1"
+    },
+    {
+        "id": "e1-7",
+        "type": "step-right",
+        "source": "7",
+        "target": "1"
+    },
+    {
+        "id": "e1-8",
+        "type": "step",
+        "source": "8",
+        "target": "1"
+    },
+    {
+        "id": "e1-9",
+        "type": "step",
+        "source": "9",
+        "target": "1"
+    },
+    {
+        "id": "e1-10",
+        "type": "step",
+        "source": "10",
+        "target": "4"
+    },
+    {
+        "id": "e1-11",
+        "type": "step",
+        "source": "11",
+        "target": "4"
+    },
+    {
+        "id": "e1-12",
+        "type": "step",
+        "source": "12",
+        "target": "4"
+    },
+    {
+        "id": "e1-13",
+        "type": "step",
+        "source": "13",
+        "target": "5"
+    },
+    {
+        "id": "e1-14",
+        "type": "step",
+        "source": "14",
+        "target": "7"
+    },
+    {
+        "id": "e1-15",
+        "type": "step",
+        "source": "15",
+        "target": "7"
+    },
+    {
+        "id": "e1-16",
+        "type": "step",
+        "source": "16",
+        "target": "7"
+    },
+    {
+        "id": "e1-17",
+        "type": "step",
+        "source": "17",
+        "target": "7"
+    },
+    {
+        "id": "e1-18",
+        "type": "step",
+        "source": "18",
+        "target": "7"
+    }
+]

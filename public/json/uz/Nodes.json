@@ -1,0 +1,513 @@
+[
+    {
+        "id": "1",
+        "title": "директор",
+        "subtitle": "",
+        "position": {
+            "x": 0,
+            "y": 0
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "bottom",
+            "sourcePosition": "left",
+            "othreSourcePosition": "right"
+        }
+    },
+    {
+        "id": "2",
+        "title": "Илмий Кенгашлар",
+        "subtitle": "",
+        "position": {
+            "x": -500,
+            "y": 0
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "3",
+        "title": "Марказий Кенгаш",
+        "subtitle": "",
+        "position": {
+            "x": 500,
+            "y": 0
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "4",
+        "title": "Директорнинг илмий ишлар бўйича ўринбосари ",
+        "subtitle": "",
+        "position": {
+            "x": -600,
+            "y": 100
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "5",
+        "title": "Директорнинг психиатрия бўйича ўринбосари ",
+        "subtitle": "",
+        "position": {
+            "x": -300,
+            "y": 100
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "bottom",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "6",
+        "title": "Директор маслаҳатчиси",
+        "subtitle": "",
+        "position": {
+            "x": 0,
+            "y": 150
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "7",
+        "title": "Директорнинг даволаш ишлари бўйича ўринбосари, марказнинг наркология клиникасининг бош шифокори",
+        "subtitle": "",
+        "position": {
+            "x": 220,
+            "y": 220
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "8",
+        "title": "Директорнинг филиаллар билан ишлаш бўйича ўринбосари",
+        "subtitle": "",
+        "position": {
+            "x": 300,
+            "y": 100
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "9",
+        "title": "Директорнинг умумий масалалар бўйича ўринбосари",
+        "subtitle": "",
+        "position": {
+            "x": 600,
+            "y": 100
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "10",
+        "title": "Илмий бўлимлар",
+        "subtitle": "1. Руҳий касалликлар эпидемиологияси, классификацияси, диагностикаси, клиникаси, даволаш, профилактика ва тиббий-ижтимоий реабилитацияси\n2. Инновацион тадқиқотлар бўлими\n3. Наркология касалликлари эпидемиологияси, классификацияси, диагностикаси, клиникаси, даволаш, профилактика ва тиббий-ижтимоий реабилитацияси\n4. Тиббий ва биологик муаммолар бўлими\n5. Генетик тадқиқотлар бўлими",
+        "position": {
+            "x": -600,
+            "y": 180
+        },
+        "style": {
+            "width": 300,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "11",
+        "title": "Ўқув бўлими",
+        "subtitle": "1. Методик бўлим\n2.  Дипломдан кейинги таълим бўлими\n3. Қўшимча таълим бўлими",
+        "position": {
+            "x": -600,
+            "y": 440
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "12",
+        "title": "Психофизиологик ва психодиагностик лаборатория",
+        "subtitle": "",
+        "position": {
+            "x": -600,
+            "y": 580
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "13",
+        "title": "Қорақалпоғистон Республикаси, Тошкент шаҳри ва вилоятлардаги психиатрия бўйича филиаллар",
+        "subtitle": "",
+        "position": {
+            "x": -250,
+            "y": 200
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "top"
+        }
+    },
+    {
+        "id": "14",
+        "title": "Консультатив поликлиник бўлимлар",
+        "subtitle": "1. Регистратура\n2. Наркология кабинети\n3. Тиббий психолог кабинети\n4. Психотерапевт кабинети\n5. Терапевт кабинети\n6. Невропатолог кабинети\n7. Бошқа ихтисослаштирилган кабинетар (керак бўлганда)",
+        "position": {
+            "x": -250,
+            "y": 350
+        },
+        "style": {
+            "width": 350,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "15",
+        "title": "Клиник-аналитик бўлимлар",
+        "subtitle": "1. Диагностика бўлимлари (УЗИ, ЭКГ, ЭЭГ, рентген ва б.)\n2. Лаборатория бўлимлари",
+        "position": {
+            "x": -140,
+            "y": 560
+        },
+        "style": {
+            "width": 240,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "16",
+        "title": "Физиотерапия бўлими",
+        "subtitle": "",
+        "position": {
+            "x": -90,
+            "y": 700
+        },
+        "style": {
+            "width": 190,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "17",
+        "title": "Ихтиёрий стационар даволаш бўлимлари",
+        "subtitle": "1. Қабул бўлими\n2. Реанимация бўлими\n3. Алкоголизмни даволаш бўлими\n4. Наркомания ва токсикоманияни даволаш бўлими\n5. Тиббий-ижтимоий реабилитация бўлими",
+        "position": {
+            "x": 193,
+            "y": 370
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "right",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "18",
+        "title": "",
+        "subtitle": "1. Дорихона\n2. Архив\n3. Марказлашган стерилизация бўлими\n4. Виварий",
+        "position": {
+            "x": 193,
+            "y": 600
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "bottom",
+            "sourcePosition": "left"
+        }
+    },
+    {
+        "id": "19",
+        "title": "Қорақалпоғистон Республикаси, Тошкент шаҳар ва вилоят наркологияси бўйича ҳудудий бўлимлар",
+        "subtitle": "",
+        "position": {
+            "x": 200,
+            "y": 730
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "20",
+        "title": "Ичкирий стационар даволаш бўлимлари",
+        "subtitle": "1. Қабулхона\n2. Реанимация бўлими\n3. Алкоголизмни даволаш бўлими\n4. Наркемания ва токсикоманияни даволаш бўлими\n5. Тиббий-ижтимоий реабилитация бўлими",
+        "position": {
+            "x": 500,
+            "y": 250
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "21",
+        "title": "Ёрдамчи бўлимлар",
+        "subtitle": "1. Дорихона\n2. Архив\n3. Марказлашган стерилизация бўлими\n4. Виварий",
+        "position": {
+            "x": 500,
+            "y": 470
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "22",
+        "title": "Қорақалпоғистон Республикаси, Тошкент шаҳар ва вилоят наркология бўйича ҳудудий филиаллар",
+        "subtitle": "",
+        "position": {
+            "x": 500,
+            "y": 650
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "23",
+        "title": "Маъмурий-хўжалик хизмати",
+        "subtitle": "1. Техник хизмат\n2. Омборхона\n3. Ошхона хизмати\n4. Озиқ-овқат бўлими",
+        "position": {
+            "x": 800,
+            "y": 250
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "24",
+        "title": "Иқтисодий-молиявий бўлим",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 400
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "25",
+        "title": "Пуллик хизматлар бўлими",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 480
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "26",
+        "title": "Халқаро алоқалар ва жамоатчилик билан алоқалар бўлими",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 550
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "27",
+        "title": "АКТ ва телемедицина бўлими",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 660
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "28",
+        "title": "Юридик бўлим",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 730
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "29",
+        "title": "Кадрлар бўйича инспектор",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 810
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    },
+    {
+        "id": "30",
+        "title": "Ташкилий-услубий ва таҳлил бўлими",
+        "subtitle": "",
+        "position": {
+            "x": 800,
+            "y": 880
+        },
+        "style": {
+            "width": 210,
+            "display": "block"
+        },
+        "options": {
+            "targetPosition": "left",
+            "sourcePosition": "right"
+        }
+    }
+]

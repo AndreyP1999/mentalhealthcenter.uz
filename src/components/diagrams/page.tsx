@@ -1,7 +1,8 @@
 'use client'
 import { createNodes } from "@/helpers/writeDiagram";
 import { DiagramsComponents } from "@/interface/local/main/diagramsComponents";
-import { useState } from "react";
+import { Nodes } from "@/interface/nodeInterface";
+import { useEffect, useState } from "react";
 import ReactFlow, {
     Edge,
     useStoreApi,
@@ -15,12 +16,39 @@ import ReactFlow, {
 import 'reactflow/dist/style.css';
 
 
-function Diagrams({localizate}: { localizate: DiagramsComponents }) {
- 
-    const initialNodes = createNodes(localizate)
+function Diagrams({ lng, localizate }: { lng: "ru" | "uz" | "en", localizate: DiagramsComponents }) {
 
-    const [nodes, setNodes] = useState(initialNodes);
-    const [edges, setEdges] = useState(localizate?.content?.Edges);
+    const [nodes, setNodes] = useState<Nodes[]>([]);
+    const [edges, setEdges] = useState([]);
+    const GetDataForDiagrams = async (lng: "ru" | "uz" | "en") => {
+        try {
+            const [EdgesRes, NodesRes] = await Promise.all([
+                fetch("/json/Edges.json"),
+                fetch("/json/" + lng + "/Nodes.json")
+            ])
+
+            if (!EdgesRes.ok || !NodesRes.ok) {
+                throw new Error('Ошибка получения данных');
+            }
+            const [Edges, Nodes] = await Promise.all([
+                EdgesRes.json(),
+                NodesRes.json()
+            ])
+            // console.log(Edges, Nodes)
+
+            setNodes(createNodes(Nodes))
+            setEdges(Edges)
+        }
+        catch (error) {
+            console.log(error);
+        }
+
+    }
+    useEffect(() => {
+        GetDataForDiagrams(lng)
+    }, [])
+    console.log(nodes);
+    console.log(edges);
 
     return (
 
@@ -29,7 +57,7 @@ function Diagrams({localizate}: { localizate: DiagramsComponents }) {
                 <h1 className="font-bold text-xl text-black uppercase text-center sm:text-2xl lg:text-4xl">flowchart</h1>
                 <div className="container h-2/3  bg-white border border-black shadow-lg">
                     <ReactFlow nodes={nodes} edges={edges} fitView>
-                        <Background id="1" gap={10} color="#f1f1f1" variant={BackgroundVariant.Lines} />
+                        {/* <Background id="1" gap={10} color="#f1f1f1" variant={BackgroundVariant.Lines} /> */}
                         <Background id="2" gap={100} offset={1} color="#ccc" variant={BackgroundVariant.Lines} />
                         <Controls>
                         </Controls>

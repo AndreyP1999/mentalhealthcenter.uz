@@ -1,26 +1,31 @@
-import Link from "next/link";
-import data from "./testData";
+
 import Image from "next/image";
 import Header from "@/components/header/page";
 import Footer from "@/components/footer/page";
 import { localizationMainPageRU } from "@/local/ru/main";
-import { PrismaClient } from "@prisma/client";
 import { PrismaBranches } from "@/helpers/prisma/prismaBranches";
+import { Metadata, ResolvingMetadata } from "next";
+import { mainLanguages } from "@/local/listLang";
+
+// export async function generateMetadata({ params }: { params?: { lng: "uz" | "en" } }, parent: ResolvingMetadata): Promise<Metadata> {
+//     // read route params
+//     const lang = params ? params.lng : mainLanguages
+//     return {
+//         title: localizationPatients[lang]?.head?.title ?? "",
+//         description: localizationPatients[lang]?.head?.description ?? "",
+//         keywords: localizationPatients[lang]?.head?.keywords ?? "",
+//     }
+// }
+
 async function Branches({ params }: { params: { lng: "ru" | "uz" | "en" } }) {
-
     const prisma = new PrismaBranches()
-
     const listBranches = await prisma.getAllBranches(params.lng)
-
-
 
     return (
         <>
-            <Header lng={params.lng} localizate={localizationMainPageRU.header} />
+            <Header lng={params.lng}/>
             <main className="overflow-hidden">
                 <section className="container mx-auto my-16 text-black relative">
-
-
                     <Image src='/image/Ellipse.svg' className="absolute -right-28 -top-8 -z-10" width={598} height={598} alt="" />
                     <h2 className="font-bold uppercase  mb-7 text-center sm:text-2xl lg:text-4xl">Структура учреждения</h2>
                     <div className="overflow-x-auto" style={{ borderRadius: "10px" }}>
@@ -47,7 +52,7 @@ async function Branches({ params }: { params: { lng: "ru" | "uz" | "en" } }) {
                     </div>
                 </section>
             </main>
-            <Footer localizate={localizationMainPageRU.footer} />
+            <Footer lng={params.lng} />
         </>
 
     );

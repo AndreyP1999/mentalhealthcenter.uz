@@ -1,10 +1,10 @@
-  
+
 import { HeaderComponent } from "@/interface/local/headerComponent";
 import Image from "next/image";
 import Link from "next/link";
 import LangMenu from "./langmenu";
-
-export default function Header({ localizate, lng }: { localizate: HeaderComponent, lng: "ru" | "en" | "uz" }) {
+import { localizationHeader } from "@/local/header";
+export default function Header({ lng }: { lng: "ru" | "en" | "uz" }) {
 
     return (
         <section>
@@ -12,7 +12,7 @@ export default function Header({ localizate, lng }: { localizate: HeaderComponen
             <div id="burger" className='fixed z-20 top-0 min-h-screen  bg-blue-950  bg-opacity-80 text-2xl   text-white left-0 lg:hidden transition-all -mx-44 w-0 overflow-hidden'>
                 <label className="absolute z-50 right-4 top-4 cursor-pointer" htmlFor="burger-checkbox">x</label>
                 <div className="flex flex-col gap-6 px-11 py-8 ">
-                    <WriteLinks key={1} lng={lng} localizate={localizate} />
+                    <WriteLinks key={1} lng={lng} localizationHeader={localizationHeader[lng]} />
                 </div>
 
             </div>
@@ -29,7 +29,7 @@ export default function Header({ localizate, lng }: { localizate: HeaderComponen
                 </div>
                 <div className='justify-self-end flex items-center lg:col-end-13 '>
                     <div className='hidden lg:flex gap-6 items-center'>
-                        <WriteLinks key={2} lng={lng} localizate={localizate} />
+                        <WriteLinks key={2} lng={lng} localizationHeader={localizationHeader[lng]} />
 
                     </div>
 
@@ -44,17 +44,17 @@ export default function Header({ localizate, lng }: { localizate: HeaderComponen
         </section>
     )
 }
-function WriteLinks({ localizate, lng }: { localizate: HeaderComponent, lng: "ru" | "en" | "uz" }) {
+function WriteLinks({ localizationHeader, lng }: { localizationHeader: HeaderComponent, lng: "ru" | "en" | "uz" }) {
 
 
     return (
         <>
 
-            <Link href={`/${lng}/`}>{localizate?.Main}</Link>
-            <Link href={`/${lng}/Patients`}>{localizate?.Patients}</Link>
-            <Link href={`/${lng}/Branches`}>{localizate?.Branches}</Link>
-            <Link href={`/${lng}/Specialists`}>{localizate?.Specialists}</Link>
-            <LangMenu thisLang={lng} lang={localizate?.lang} />
+            <Link href={`/${lng}/`}>{localizationHeader?.Main}</Link>
+            <Link href={`/${lng}/Patients`}>{localizationHeader?.Patients}</Link>
+            <Link href={`/${lng}/Branches`}>{localizationHeader?.Branches}</Link>
+            <Link href={`/${lng}/Specialists`}>{localizationHeader?.Specialists}</Link>
+            <LangMenu thisLang={lng} lang={localizationHeader?.lang} />
 
         </>
     )

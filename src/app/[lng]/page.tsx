@@ -8,10 +8,6 @@ import Header from "@/components/header/page";
 import Banner from "@/components/main/banner/page";
 import ListDepartment from "@/components/main/listDepartment/page";
 
-import { gsap } from "gsap";
-    
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 export async function generateMetadata({ params }: { params?: { lng: "uz" | "en" } }, parent: ResolvingMetadata): Promise<Metadata> {
   // read route params
   const lang = params ? params.lng : mainLanguages
@@ -27,18 +23,18 @@ export async function generateMetadata({ params }: { params?: { lng: "uz" | "en"
 export default function Home({ params }: { params?: { lng: "uz" | "en" } }) {
   const lang = params?.lng ? params.lng : mainLanguages
   const text = localizationMain[lang]
-  // console.log("params",params);
+
 
   return (
     <div>
-      <Header lng={lang} localizate={text?.header} />
+      <Header lng={lang} />
       <main>
         <Banner localizate={text?.banner} />
         <ListDepartment lang={lang} localizate={text?.listDepartment} />
-        <Diagrams localizate={text?.diagrams} />
+        <Diagrams lng={lang} localizate={text?.diagrams} />
 
       </main>
-      <Footer localizate={text?.footer} />
+      <Footer lng={lang} />
     </div>
   )
 }
