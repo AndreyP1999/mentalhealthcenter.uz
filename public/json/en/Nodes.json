@@ -132,7 +132,7 @@
             "display": "block"
         },
         "options": {
-            "targetPosition": "left",
+            "targetPosition": "right",
             "sourcePosition": "top"
         }
     },
@@ -141,7 +141,7 @@
         "title": "Deputy Director for General Affairs",
         "subtitle": "",
         "position": {
-            "x": 600,
+            "x": 800,
             "y": 100
         },
         "style": {
@@ -323,59 +323,10 @@
             "sourcePosition": "right"
         }
     },
+
+
     {
         "id": "20",
-        "title": "Inpatient Treatment Departments",
-        "subtitle": "1. Admission Department\n2. Intensive Care Unit\n3. Department of Alcoholism Treatment\n4. Department of Drug and Toxicomania Treatment\n5. Department of Medical and Social Rehabilitation",
-        "position": {
-            "x": 500,
-            "y": 250
-        },
-        "style": {
-            "width": 210,
-            "display": "block"
-        },
-        "options": {
-            "targetPosition": "left",
-            "sourcePosition": "right"
-        }
-    },
-    {
-        "id": "21",
-        "title": "Auxiliary Departments",
-        "subtitle": "1. Pharmacy\n2. Archive\n3. Centralized Sterilization Department\n4. Vivarium",
-        "position": {
-            "x": 500,
-            "y": 470
-        },
-        "style": {
-            "width": 210,
-            "display": "block"
-        },
-        "options": {
-            "targetPosition": "left",
-            "sourcePosition": "right"
-        }
-    },
-    {
-        "id": "22",
-        "title": "Republic of Karakalpakstan, Tashkent City and Regional Branches for Drug Addiction",
-        "subtitle": "",
-        "position": {
-            "x": 500,
-            "y": 650
-        },
-        "style": {
-            "width": 210,
-            "display": "block"
-        },
-        "options": {
-            "targetPosition": "left",
-            "sourcePosition": "right"
-        }
-    },
-    {
-        "id": "23",
         "title": "Administrative and Economic Service",
         "subtitle": "1. Technical Service\n2. Warehouse\n3. Kitchen Service\n4. Food Department",
         "position": {
@@ -392,7 +343,7 @@
         }
     },
     {
-        "id": "24",
+        "id": "21",
         "title": "Economic and Financial Department",
         "subtitle": "",
         "position": {
@@ -409,7 +360,7 @@
         }
     },
     {
-        "id": "25",
+        "id": "22",
         "title": "Department of Paid Services",
         "subtitle": "",
         "position": {
@@ -426,24 +377,24 @@
         }
     },
     {
-        "id": "26",
+        "id": "23",
         "title": "Department of International Relations and Public Relations",
         "subtitle": "",
         "position": {
             "x": 800,
-            "y": 550
+            "y": 250
         },
         "style": {
             "width": 210,
             "display": "block"
         },
         "options": {
-            "targetPosition": "left",
-            "sourcePosition": "right"
+            "targetPosition": "right",
+            "sourcePosition": "left"
         }
     },
     {
-        "id": "27",
+        "id": "24",
         "title": "Department of ICT and Telemedicine",
         "subtitle": "",
         "position": {
@@ -460,7 +411,7 @@
         }
     },
     {
-        "id": "28",
+        "id": "25",
         "title": "Legal Department",
         "subtitle": "",
         "position": {
@@ -477,7 +428,7 @@
         }
     },
     {
-        "id": "29",
+        "id": "26",
         "title": "Personnel Inspector",
         "subtitle": "",
         "position": {
@@ -494,7 +445,7 @@
         }
     },
     {
-        "id": "30",
+        "id": "27",
         "title": "Department of Organizational-Methodological and Analytical Work",
         "subtitle": "",
         "position": {

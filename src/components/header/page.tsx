@@ -51,7 +51,7 @@ function WriteLinks({ localizationHeader, lng }: { localizationHeader: HeaderCom
         <>
 
             <Link href={`/${lng}/`}>{localizationHeader?.Main}</Link>
-            <Link href={`/${lng}/Patients`}>{localizationHeader?.Patients}</Link>
+            <Link href={`/${lng}/Patients1`}>{localizationHeader?.Patients}</Link>
             <Link href={`/${lng}/Branches`}>{localizationHeader?.Branches}</Link>
             <Link href={`/${lng}/Specialists`}>{localizationHeader?.Specialists}</Link>
             <LangMenu thisLang={lng} lang={localizationHeader?.lang} />

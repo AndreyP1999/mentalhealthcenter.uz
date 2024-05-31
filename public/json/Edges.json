@@ -100,5 +100,60 @@
         "type": "step",
         "source": "18",
         "target": "7"
+    },
+
+    {
+        "id": "e1-19",
+        "type": "step",
+        "source": "19",
+        "target": "8"
+    },
+    {
+        "id": "e1-20",
+        "type": "step",
+        "source": "20",
+        "target": "9"
+    },
+    {
+        "id": "e1-21",
+        "type": "step",
+        "source": "21",
+        "target": "1"
+    },
+    {
+        "id": "e1-22",
+        "type": "step",
+        "source": "22",
+        "target": "1"
+    },
+    {
+        "id": "e1-23",
+        "type": "step",
+        "source": "23",
+        "target": "1"
+    },
+    {
+        "id": "e1-24",
+        "type": "step",
+        "source": "24",
+        "target": "1"   
+    },
+    {
+        "id": "e1-25",
+        "type": "step",
+        "source": "25",
+        "target": "1"
+    },        
+    {
+        "id": "e1-26",
+        "type": "step",
+        "source": "26",
+        "target": "1"
+    },
+    {
+        "id": "e1-27",
+        "type": "step",
+        "source": "27",
+        "target": "1"
     }
 ]

@@ -415,6 +415,10 @@ body {
   transform: translate(0) scale(1);
   visibility: visible;
 }
+.react-flow__edge-path, .react-flow__connection-path {
+  stroke: #0360d9 !important;
+  stroke-width: 1px !important;
+}
 
 @keyframes drow1 {
   0% {

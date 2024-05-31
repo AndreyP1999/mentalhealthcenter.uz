@@ -1,0 +1,272 @@
+[
+    {
+        "title": "Republican Specialized Scientific and Practical Medical Center of Mental Health. List of Territorial Psychiatry Branches",
+        "thead": {
+            "id": "№",
+            "medical_institution": "Medical institution",
+            "territorial_branches": "Territorial branches",
+            "address": "Address"
+        },
+        "tbody": [
+            {
+                "id": 1,
+                "medical_institution": "Republican Psychoneurological Dispensary id 1 of the Republic of Karakalpakstan",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in the Republic of Karakalpakstan",
+                "address": "Republic of Karakalpakstan, Nukus, T. Yeshanova Street, 80"
+            },
+            {
+                "id": 2,
+                "medical_institution": "Andijan Regional Psychoneurological Dispensary",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Andijan Region",
+                "address": "Andijan Region, Andijan, Yu. Otabekov Street, 3"
+            },
+            {
+                "id": 3,
+                "medical_institution": "Bukhara Regional Psychoneurological Dispensary",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Bukhara Region",
+                "address": "Bukhara Region, Bukhara, Gazli Shokh Street, 1"
+            },
+            {
+                "id": 4,
+                "medical_institution": "Jizzakh Regional Psychoneurological Dispensary",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Jizzakh Region",
+                "address": "Jizzakh Region, Sh. Rashidov District,  Yangiobod Village, Sangzor Street, 1"
+            },
+            {
+                "id": 5,
+                "medical_institution": "Kashkadarya Regional Psychoneurological Dispensary id 1. Kashkadarya Regional Psychiatric Hospital",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Kashkadarya Region",
+                "address": "Kashkadarya Region, Karshi, I. Karimov Street, 85"
+            },
+            {
+                "id": 6,
+                "medical_institution": "Navoi Regional Psychoneurological Dispensary",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Navoi Region",
+                "address": "Navoi Region, Navbakhor District,  MFY \"Kalkon ota\", Kalkon ota Shokh Street, 1A"
+            },
+            {
+                "id": 7,
+                "medical_institution": "Namangan Regional Psychiatric Hospital",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Namangan Region",
+                "address": "Namangan Region, Turakurgan District,  MFY \"Bekobod\""
+            },
+            {
+                "id": 8,
+                "medical_institution": "Samarkand Regional Psychiatric Hospital",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Samarkand Region",
+                "address": "Samarkand Region, Urgut District,  Khalqobod Village, \"Ukrach\" mahalla"
+            },
+            {
+                "id": 9,
+                "medical_institution": "Surkhandarya Regional Psychiatric Hospital",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Surkhandarya Region",
+                "address": "Surkhandarya Region, Termez District,  MFY \"Khalqobod\", Mustaqillik Street, 1A"
+            },
+            {
+                "id": 10,
+                "medical_institution": "Syrdarya Regional Dispensary for Nervous and Mental Diseases",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Syrdarya Region",
+                "address": "Syrdarya Region, Gulistan,  MFY \"Madaniyat\", Amir Temur Street, 53"
+            },
+            {
+                "id": 11,
+                "medical_institution": "Tashkent Regional Psychoneurological Dispensary",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Tashkent Region",
+                "address": "Tashkent Region, Chirchik, A. Navoi Shokh Street, 248"
+            },
+            {
+                "id": 12,
+                "medical_institution": "Ferghana Regional Psychiatric Hospital id 1",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Ferghana Region",
+                "address": "Ferghana Region, Ferghana District,  MFY \"Mash’al\", Qadr-kimmat Street, 51"
+            },
+            {
+                "id": 13,
+                "medical_institution": "Khorezm Regional Psychoneurological Dispensary",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Khorezm Region",
+                "address": "Khorezm Region, Urgench, Navruz Street, unnamed house"
+            },
+            {
+                "id": 14,
+                "medical_institution": "Tashkent City Clinical Psychiatric Hospital",
+                "territorial_branches": "Branch of the Republican Specialized Scientific and Practical Medical Center of Mental Health for Psychiatry in Tashkent city",
+                "address": "Tashkent, Mirabad District, Mehrjon Street, 35"
+            }
+        ]
+    },
+    {
+        "title": "Branches of Corresponding Psychiatric Institutions of the Republic of Karakalpakstan, Tashkent City and Region Under Organizational and Methodological Guidance",
+        "thead": {
+            "id": "№",
+            "medical_institution": "Medical institution",
+            "address": "Address"
+        },
+        "tbody": [
+            {
+                "id": 1,
+                "medical_institution": "Republican Psychoneurological Dispensary id 2 of the Republic of Karakalpakstan",
+                "address": "Republic of Karakalpakstan, Ellikqala District, OFY \"Sarabiy\""
+            },
+            {
+                "id": 2,
+                "medical_institution": "Kashkadarya Regional Psychoneurological Dispensary id 2",
+                "address": "Kashkadarya Region, Kitob District, MFY \"Istikbol\", Tolzor Street, 2"
+            },
+            {
+                "id": 3,
+                "medical_institution": "Surkhandarya Regional Psychiatric Hospital id 2",
+                "address": "Surkhandarya Region, Denov District, MFY \"Yangi Khazarbog\", Mevazor Street, 1A"
+            },
+            {
+                "id": 4,
+                "medical_institution": "Tashkent Regional Psychiatric Hospital id 1",
+                "address": "Tashkent Region, Yangiyul District, QFY \"Khalqobod\", U. Normata Street, 5"
+            },
+            {
+                "id": 5,
+                "medical_institution": "Tashkent Regional Psychiatric Hospital id 2",
+                "address": "Tashkent Region, Almalyk, Almalyksoy Street, 7"
+            },
+            {
+                "id": 6,
+                "medical_institution": "Ferghana Regional Psychiatric Hospital id 2",
+                "address": "Ferghana Region, Kokand, Akhiillik Street, 2"
+            },
+            {
+                "id": 7,
+                "medical_institution": "Tashkent City Psychoneurological Dispensary id 1",
+                "address": "Tashkent, Yakkasaray District, Mukimi Street, 94"
+            },
+            {
+                "id": 8,
+                "medical_institution": "Tashkent City Psychoneurological Dispensary id 2",
+                "address": "Tashkent, Yashnabad District, Karasu Street, 25"
+            },
+            {
+                "id": 9,
+                "medical_institution": "Tashkent City Center for Mental and Nervous Diseases in Children",
+                "address": "Tashkent, Mirabad District, MFY \"Istiklolabad\", Eski Sarakul Street, 2"
+            }
+        ]
+    },
+    {
+        "title": "Republican Specialized Scientific and Practical Medical Center of Mental Health Regional Narcology Branches",
+        "thead": {
+            "id": "№",
+            "medical_institution": "Medical institution",
+            "regionalBranchesNarcology": "Regional Narcology Branches",
+            "address": "Address of the medical institution"
+        },
+        "tbody": [
+            {
+                "id": 1,
+                "medical_institution": "Republican Specialized Scientific and Practical Medical Center of Narcology Karakalpak Branch",
+                "regionalBranchesNarcology": "Karakalpak Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Republic of Karakalpakstan, Takhiatas District,  Babanova Street, 3"
+            },
+            {
+                "id": 2,
+                "medical_institution": "Andijan Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Andijan Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Andijan Region, Andijan,  Yusuf Otabekov Street, 3"
+            },
+            {
+                "id": 3,
+                "medical_institution": "Bukhara Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Bukhara Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Bukhara Region, Bukhara,  Juibar Street, 65"
+            },
+            {
+                "id": 4,
+                "medical_institution": "Jizzakh Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Jizzakh Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Jizzakh Region, Pakhtaqor District,  Dilоrom village, Navruz Street, 2"
+            },
+            {
+                "id": 5,
+                "medical_institution": "Kashkadarya Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Kashkadarya Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Kashkadarya Region, Karshi,  Sodikov Street, 7/1"
+            },
+            {
+                "id": 6,
+                "medical_institution": "Navoi Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Navoi Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Navoi Region, Navoi, Soglom Avlod, 10"
+            },
+            {
+                "id": 7,
+                "medical_institution": "Namangan Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Namangan Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Namangan Region, Namangan,  Navoi Street, 70"
+            },
+            {
+                "id": 8,
+                "medical_institution": "Samarkand Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Samarkand Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Samarkand Region, Samarkand,  Ali Qushchi Street, 15-A"
+            },
+            {
+                "id": 9,
+                "medical_institution": "Surkhandarya Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Surkhandarya Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Surkhandarya Region, Termez, Uchkun Street, 5"
+            },
+            {
+                "id": 10,
+                "medical_institution": "Syrdarya Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Syrdarya Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Syrdarya Region, Gulistan,  Obod Yurt mahalla, Ibn Sino Street, 20"
+            },
+            {
+                "id": 11,
+                "medical_institution": "Tashkent Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Tashkent Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Tashkent Region, Angren, Aпартак village, Obod Turmush Street, 20"
+            },
+            {
+                "id": 12,
+                "medical_institution": "Ferghana Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Ferghana Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Ferghana Region, Fergana, Tabassum mahalla, Yangi Zamon Street, 61"
+            },
+            {
+                "id": 13,
+                "medical_institution": "Khorezm Regional Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Khorezm Regional Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Khorezm Region, Urgench District, Chakka Shalikur village, Shermatlar mahalla"
+            },
+            {
+                "id": 14,
+                "medical_institution": "Tashkent City Branch of the Republican Specialized Scientific and Practical Medical Center of Narcology",
+                "regionalBranchesNarcology": "Tashkent City Branch of Narcology of the Republican Specialized Scientific and Practical Medical Center of Mental Health",
+                "address": "Tashkent, Chilonzar District,  Katta Chilonzar 2 mahalla, Arnasay Street, 32"
+            }
+        ]
+    },
+    {
+        "title": "Corresponding Institutions Under the Organizational and Methodological Guidance of the Branches of the Republic of Karakalpakstan, Tashkent City and Region for Narcology",
+        "thead": {
+            "id": "№",
+            "medical_institution": "Medical institution",
+            "address": "Address"
+        },
+        "tbody": [
+            {
+                "id": 1,
+                "medical_institution": "Tashkent City Narcology Dispensary for Compulsory Treatment",
+                "address": "Bektemir District, Altyn Topgan mahalla, Altyn Topgan Street, 4A"
+            },
+            {
+                "id": 2,
+                "medical_institution": "Surkhandarya Regional Specialized Narcology Dispensary for Compulsory Treatment",
+                "address": "Surkhandarya Region,  Shargun city, Madankul village, Nurafshon Street, 248"
+            },
+            {
+                "id": 3,
+                "medical_institution": "Ferghana Regional Narcology Dispensary id2",
+                "address": "Ferghana Region, Kokand, Burclik Street, 5"
+            }
+        ]
+    }
+]

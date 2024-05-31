@@ -66,13 +66,13 @@ export default function NotFound() {
                         rx="17.371" ry="8.106"
                     />
                     <path d="M13,118.5C13,61.338,59.338,15,116.5,15c55.922,0,101.477,44.353,103.427,99.797  c0.044-1.261,0.073-2.525,0.073-3.797C220,50.802,171.199,2,111,2S2,50.802,2,111c0,50.111,33.818,92.318,79.876,105.06  C41.743,201.814,13,163.518,13,118.5z" fill="#FFEFB5" /><circle cx="113" cy="113" fill="none" r="109" stroke="#6E6E96" strokeWidth="8" /></svg>
-                <div className=" tracking-widest mt-4">
-                    <span className="text-gray-500 text-6xl block"><span>Not Found</span></span>
-                    <span className="text-gray-500 text-xl"> </span>
+                <div className=" tracking-widest mt-4 flex flex-col gap-4">
+                    <span className="text-gray-500 text-6xl block upercase"><span>данная страница находится в разработке. </span></span>
+                    <span className="text-gray-500 text-xl">Приносим свои извинения</span>
 
                 </div>
             </center>
-            <center className="mt-6">
+            <center className="mt-6 text-red-400">
                 <Link href={{
                     pathname: "/"
                 }}>Return Home</Link>
