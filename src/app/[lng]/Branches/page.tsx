@@ -3,7 +3,6 @@ import Image from "next/image";
 import Header from "@/components/header/page";
 import Footer from "@/components/footer/page";
 
-
 // export async function generateMetadata({ params }: { params?: { lng: "uz" | "en" } }, parent: ResolvingMetadata): Promise<Metadata> {
 //     // read route params
 //     const lang = params ? params.lng : mainLanguages
@@ -17,7 +16,7 @@ import Footer from "@/components/footer/page";
 async function Branches({ params }: { params: { lng: "ru" | "uz" | "en" } }) {
 
 
-    const revalidatedData = await fetch(`/json/${params.lng}/branches.json`, {
+    const revalidatedData = await fetch(`${process.env.HOST_NAME}/json/${params.lng}/branches.json`, {
         next: { revalidate: 20 },
     })
     const listTables = await revalidatedData.json();
