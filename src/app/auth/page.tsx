@@ -7,11 +7,9 @@ function Auth() {
         if (form.login.value == "" || form.password.value == "") {
             return
         }
-        console.log(form.login.value);
         
         const res = await fetch(url, { method: "POST", body: JSON.stringify({ password: form.password.value, login: form.login.value }) })
         const data = await res.json()
-        console.log(data);
        if ( data.status=="success") {
     
         window.location.pathname="/adminPanel"

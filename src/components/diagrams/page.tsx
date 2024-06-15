@@ -47,8 +47,7 @@ function Diagrams({ lng, localizate }: { lng: "ru" | "uz" | "en", localizate: Di
     useEffect(() => {
         GetDataForDiagrams(lng)
     }, [])
-    console.log(nodes);
-    console.log(edges);
+
 
     return (
 

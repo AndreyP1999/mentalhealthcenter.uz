@@ -1,0 +1,10 @@
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7615838571756828) 11%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.7447771344866072) 90%, rgba(255, 255, 255, 0) 100%);
+}
