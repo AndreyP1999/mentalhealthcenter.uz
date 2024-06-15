@@ -17,7 +17,7 @@ import Footer from "@/components/footer/page";
 async function Branches({ params }: { params: { lng: "ru" | "uz" | "en" } }) {
 
 
-    const revalidatedData = await fetch(`http://localhost:3000/json/${params.lng}/branches.json`, {
+    const revalidatedData = await fetch(`/json/${params.lng}/branches.json`, {
         next: { revalidate: 20 },
     })
     const listTables = await revalidatedData.json();

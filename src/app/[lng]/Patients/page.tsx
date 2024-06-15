@@ -42,14 +42,14 @@ export default function Patients({ params }: {
 
                     </h1>
                 </div>
-                {/* <MainContent
+                <MainContent
                     download={localizationPatients[params.lng].download}
                     find={localizationPatients[params.lng].find}
                     file_name={localizationPatients[params.lng].file_name}
                     title={localizationPatients[params.lng].title}
                     upload_date={localizationPatients[params.lng].upload_date}
                     params={params}
-                /> */}
+                />
 
             </div>
             <Footer lng={params.lng} />
