@@ -28,10 +28,11 @@ export default function Patients({ params }: {
 
     return (
         <>
-            <Header lng={params.lng}  />
+            <Header lng={params.lng} />
             <div className="container mx-auto flex flex-col items-stretch pt-5 h-screen">
                 <div className="flex-col mb-5 text-black text-4xl font-bold uppercase relative whitespace-nowrap overflow-hidden min-h-[170px] justify-center pl-28 pr-5 pt-16 pb-16 items-start max-md:max-w-full">
                     <img
+                        src='/bg/bg-1.png'
                         loading="lazy"
                         srcSet="/bg/bg-1.png"
                         className="absolute h-full w-full object-cover object-center inset-0"
@@ -41,17 +42,17 @@ export default function Patients({ params }: {
 
                     </h1>
                 </div>
-                <MainContent
+                {/* <MainContent
                     download={localizationPatients[params.lng].download}
                     find={localizationPatients[params.lng].find}
                     file_name={localizationPatients[params.lng].file_name}
                     title={localizationPatients[params.lng].title}
                     upload_date={localizationPatients[params.lng].upload_date}
                     params={params}
-                />
+                /> */}
 
             </div>
-            <Footer lng={params.lng}/>
+            <Footer lng={params.lng} />
         </>
     );
 }
