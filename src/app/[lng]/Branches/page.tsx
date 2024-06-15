@@ -21,7 +21,6 @@ async function Branches({ params }: { params: { lng: "ru" | "uz" | "en" } }) {
         next: { revalidate: 20 },
     })
     const listTables = await revalidatedData.json();
-    console.log(listTables);
 
     return (
         <>
@@ -51,7 +50,6 @@ async function Branches({ params }: { params: { lng: "ru" | "uz" | "en" } }) {
                                                 <tr className="h-8" style={{ background: (rows.id % 2 == 0) ? "#A5CCFF" : "rgb(255, 255, 255)" }} key={rows.id}>
                                                     {
                                                         Object.keys(table.thead).map((key: any, index: number) => {
-                                                            console.log(rows, key);
                                                             return <td key={index} className="px-3 py-4 border border-zinc-900 font-medium ">{rows[key]}</td>
                                                         })
                                                     }
