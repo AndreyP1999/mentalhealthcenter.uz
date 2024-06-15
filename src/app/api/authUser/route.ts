@@ -3,7 +3,6 @@ import { NextResponse } from "next/server"
 import { resolve } from "node:path";
 import { mkdir, createWriteStream } from "node:fs";
 import { transcriptionEnRu } from "@/helpers/transcriptionEnRu";
-import { generateHTML } from "@/helpers/generateHTML";
 import { PrismaClient } from "@prisma/client";
 import { compare } from "bcryptjs";
 import { signJWT } from "@/helpers/jwt/signJWT";
