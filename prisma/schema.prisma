@@ -4,7 +4,8 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgresql://postgres:2222@localhost:5432/mentalhealthcenter"
+  url      = "postgresql://mentalhealthcenter_owner:RB4te6ShInEf@ep-square-river-a5j50l95-pooler.us-east-2.aws.neon.tech/mentalhealthcenter?sslmode=require"
+
 }
 
 model BranchesRU {

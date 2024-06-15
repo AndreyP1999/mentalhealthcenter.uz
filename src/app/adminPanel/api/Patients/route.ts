@@ -3,7 +3,6 @@ import { NextResponse } from "next/server"
 import { resolve } from "path";
 import { writeFile } from "node:fs/promises";
 import { transcriptionEnRu } from "@/helpers/transcriptionEnRu";
-import { generateHTML } from "@/helpers/generateHTML";
 import mime from 'mime';
 import { PrismaClient } from "@prisma/client";
 
