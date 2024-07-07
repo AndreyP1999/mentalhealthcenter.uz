@@ -262,6 +262,7 @@ body {
   top: 0;
   width: 56px;
   height: 100%;
+  display: block;
   overflow: hidden;
 }
 
@@ -304,6 +305,7 @@ body {
 .button__drow2 {
   position: absolute;
   z-index: -1;
+  display: block;
   border-radius: 16px;
   transform-origin: 16px 16px;
 }

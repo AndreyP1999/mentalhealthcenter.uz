@@ -78,7 +78,7 @@ function BannerForm({ localizate }: { localizate: BannerComponent }) {
 
 
                     </div>
-                    <textarea maxLength={22} placeholder="текст сообщения" name="text" className="textareaForm w-full hidden sm:block" id="" >
+                    <textarea maxLength={22} placeholder="текст сообщения" name="text" className="textareaForm w-full hidden sm:block" >
 
 
                     </textarea>
