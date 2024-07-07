@@ -2,8 +2,36 @@
 
 import { BannerComponent } from "@/interface/local/main/bannerComponents";
 import TheButton from "@/UI/buttion/page";
+import { match } from "assert";
+import React, { useState } from "react";
 
 function BannerForm({ localizate }: { localizate: BannerComponent }) {
+    function validateUzbekPhoneNumber(e: React.ChangeEvent<HTMLInputElement>
+    ) {
+        // deleteContentBackward: Пользователь удалил текст, используя клавишу "Backspace".
+        // deleteContentForward: Пользователь удалил текст, используя клавишу "Delete".
+        // deleteByCut: Пользователь удалил текст, используя команду "Вырезать".
+        // deleteByDrag: Пользователь удалил текст, перетащив его из поля ввода.
+        // @ts-ignore: error message
+        const inputType = e.nativeEvent.inputType;
+        const listInputTypeDel = ["deleteContentBackward", "deleteContentForward", "deleteByDrag", "deleteByCut"];
+        if (listInputTypeDel.includes(inputType)) {
+            return
+        }
+        const regV = /[0-9]/;
+
+        // @ts-ignore: error message
+        if (!regV.test(e.nativeEvent.data)) return;
+
+
+        const length = e.currentTarget.value.length;
+        if (length > 22) e.target.value = e.target.value.substring(0, 22);
+        else if (length < 5) e.currentTarget.value = "+998 (";
+        else if (length == 8) e.currentTarget.value = `${e.target.value}) `;
+        else if (length == 13 || length == 16 || length == 19) e.currentTarget.value = `${e.target.value}-`;
+        else e.currentTarget.value = e.target.value;
+
+    }
     const handlerSubmit = async (e: any) => {
         e.preventDefault();
         const form = e.currentTarget;
@@ -33,11 +61,11 @@ function BannerForm({ localizate }: { localizate: BannerComponent }) {
                 <h3 className="font-bold text-xl sm:text-2xl lg:text-3xl" > {localizate?.titie} </h3>
                 <input type="text" name="userName" placeholder="Ваше имя" className="inputForm w-full h-9" />
                 <div className="flex flex-col-reverse sm:flex-row gap-7 w-full">
-                    <input type="number" name="phone" defaultValue="99890" className="inputForm h-9 grow" />
+                    <input type="text" name="phone" onChange={validateUzbekPhoneNumber} defaultValue="+998 (" className="inputForm h-9 grow" />
 
 
                 </div>
-                <textarea placeholder="текст сообщения" name="text" className="textareaForm w-full hidden sm:block" id="" >
+                <textarea maxLength={22} placeholder="текст сообщения" name="text" className="textareaForm w-full hidden sm:block" id="" >
 
 
                 </textarea>
