@@ -25,7 +25,7 @@ function BannerForm({ localizate }: { localizate: BannerComponent }) {
 
 
         const length = e.currentTarget.value.length;
-        if (length > 22) e.target.value = e.target.value.substring(0, 22);
+        if (length > 19) e.target.value = e.target.value.substring(0, 22);
         else if (length < 5) e.currentTarget.value = "+998 (";
         else if (length == 8) e.currentTarget.value = `${e.target.value}) `;
         else if (length == 13 || length == 16 ) e.currentTarget.value = `${e.target.value}-`;
