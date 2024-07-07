@@ -1,13 +1,15 @@
 "use client"
 
+import { ModalWindows } from "@/components/ModalWindows/ModalWindows";
 import { BannerComponent } from "@/interface/local/main/bannerComponents";
 import TheButton from "@/UI/buttion/page";
 import { match } from "assert";
 import React, { useState } from "react";
 
 function BannerForm({ localizate }: { localizate: BannerComponent }) {
-    function validateUzbekPhoneNumber(e: React.ChangeEvent<HTMLInputElement>
-    ) {
+    const [showModal, setShowModal] = useState(false)
+    const [Content, setContent] = useState(<></>)
+    function validateUzbekPhoneNumber(e: React.ChangeEvent<HTMLInputElement>) {
         // deleteContentBackward: Пользователь удалил текст, используя клавишу "Backspace".
         // deleteContentForward: Пользователь удалил текст, используя клавишу "Delete".
         // deleteByCut: Пользователь удалил текст, используя команду "Вырезать".
@@ -28,7 +30,7 @@ function BannerForm({ localizate }: { localizate: BannerComponent }) {
         if (length > 19) e.target.value = e.target.value.substring(0, 22);
         else if (length < 5) e.currentTarget.value = "+998 (";
         else if (length == 8) e.currentTarget.value = `${e.target.value}) `;
-        else if (length == 13 || length == 16 ) e.currentTarget.value = `${e.target.value}-`;
+        else if (length == 13 || length == 16) e.currentTarget.value = `${e.target.value}-`;
         else e.currentTarget.value = e.target.value;
 
     }
@@ -39,7 +41,13 @@ function BannerForm({ localizate }: { localizate: BannerComponent }) {
         const phone = form.phone.value;
         const text = form.text.value;
         if (!userName || !phone || !text) {
-            alert("заполните все поля")
+            setShowModal(true)
+            setContent(<div className="text-red-700 text-center">заполните все поля</div>)
+            return
+        }
+        if (phone.length < 19) {
+            setShowModal(true)
+            setContent(<div className="text-red-700 text-center">неверный формат номера телефона</div>)
             return
         }
         const res = await fetch("/api/sendMessage", {
@@ -49,31 +57,37 @@ function BannerForm({ localizate }: { localizate: BannerComponent }) {
 
         const data = await res.json();
         if (data.status == "success") {
-            alert("success")
+            setShowModal(true)
+            setContent(<div className="text-green-700 text-center">Сообщение отправлено</div>)
         }
         else {
-            alert("error")
+            // error
+            setShowModal(true)
+            setContent(<div className="text-red-700 text-center">Ошибка отправки данных</div>)
         }
     }
     return (
-        <form id="BannerForm" onSubmit={handlerSubmit} action="#" method="post" className="form">
-            <div className=" flex flex-col gap-7 items-center px-4 xl:px-11 pt-6 xl:pb-8">
-                <h3 className="font-bold text-xl sm:text-2xl lg:text-3xl" > {localizate?.titie} </h3>
-                <input type="text" name="userName" placeholder="Ваше имя" className="inputForm w-full h-9" />
-                <div className="flex flex-col-reverse sm:flex-row gap-7 w-full">
-                    <input type="text" name="phone" onChange={validateUzbekPhoneNumber} defaultValue="+998 (" className="inputForm h-9 grow" />
+        <>
+            {showModal ? <ModalWindows  closeWindow={setShowModal} Content={Content} sendData={null} /> : null}
+            <form id="BannerForm" onSubmit={handlerSubmit} action="#" method="post" className="form">
+                <div className=" flex flex-col gap-7 items-center px-4 xl:px-11 pt-6 xl:pb-8">
+                    <h3 className="font-bold text-xl sm:text-2xl lg:text-3xl" > {localizate?.titie} </h3>
+                    <input type="text" name="userName" placeholder="Ваше имя" className="inputForm w-full h-9" />
+                    <div className="flex flex-col-reverse sm:flex-row gap-7 w-full">
+                        <input type="text" name="phone" onChange={validateUzbekPhoneNumber} defaultValue="+998 (" className="inputForm h-9 grow" />
 
 
+                    </div>
+                    <textarea maxLength={22} placeholder="текст сообщения" name="text" className="textareaForm w-full hidden sm:block" id="" >
+
+
+                    </textarea>
+                    <div className="self-end">
+                        <TheButton text={localizate?.send} type="submit" />
+                    </div>
                 </div>
-                <textarea maxLength={22} placeholder="текст сообщения" name="text" className="textareaForm w-full hidden sm:block" id="" >
-
-
-                </textarea>
-                <div className="self-end">
-                    <TheButton text={localizate?.send} type="submit" />
-                </div>
-            </div>
-        </form>
+            </form>
+        </>
     );
 }
 

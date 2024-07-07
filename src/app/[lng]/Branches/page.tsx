@@ -29,8 +29,7 @@ async function Branches({ params }: { params: { lng: "ru" | "uz" | "en" } }) {
                     <Image src='/image/Ellipse.svg' className="absolute -right-28 -top-8 -z-10" width={598} height={598} alt="" />
 
                     {listTables.map((table: any, index: number) => {
-                        // console.log(table);
-
+                       
                         return (
                             <div key={index} className="overflow-x-auto mb-16" style={{ borderRadius: "10px" }}>
 
